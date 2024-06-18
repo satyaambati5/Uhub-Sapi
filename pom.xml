@@ -21,6 +21,7 @@
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
@@ -32,6 +33,27 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.6.1</muleVersion>
+						<username>SatyaAmbati</username>
+						<password>Satya@1865</password>
+						<applicationName>My_First_APlication</applicationName>
+						<environment>Sandbox</environment>
+						<region>us-east-1</region>
+						<workers>1</workers>
+						<workerType>MICRO</workerType>
+						<properties>
+							<environment>Sandbox</environment>
+							<anypoint.platform.client_id>
+								9f8efefb2b674f8ca76e39f34dfea975</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>
+								900FE4cBb9374d17B0Da52653435a469</anypoint.platform.client_secret>
+
+						</properties>
+					</cloudHubDeployment>
+
+
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>mysql</groupId>
@@ -45,37 +67,7 @@
 				</configuration>
 
 			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.7.1</version>
-				<extensions>true</extensions>
-				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${app.runtime}</muleVersion>
-						<username>SatyaAmbati</username>
-						<password>Satya@1865</password>
-						<applicationName>My_First_APlication</applicationName>
-						<environment>Sandbox</environment>
-						<region>us-east-1</region>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
-						<properties>
-							<env>
-								dev
-							</env>
-							<api.id>1783345</api.id>
-							<anypoint.platform.client_id>
-								9f8efefb2b674f8ca76e39f34dfea975</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>
-								900FE4cBb9374d17B0Da52653435a469</anypoint.platform.client_secret>
 
-						</properties>
-					</cloudHubDeployment>
-				</configuration>
-
-			</plugin>
 		</plugins>
 	</build>
 
