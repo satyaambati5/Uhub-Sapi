@@ -36,7 +36,7 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.6.1</muleVersion>
-						<username>SatyaAmbati</username>
+						<username>SatyaAmbatidev</username>
 						<password>Satya@1865</password>
 						<applicationName>My_First_APlication</applicationName>
 						<environment>Sandbox</environment>
@@ -44,11 +44,11 @@
 						<workers>1</workers>
 						<workerType>MICRO</workerType>
 						<properties>
-							<environment>Sandbox</environment>
+							
 							<anypoint.platform.client_id>
-								9f8efefb2b674f8ca76e39f34dfea975</anypoint.platform.client_id>
+								${anypoint.platform.client_id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>
-								900FE4cBb9374d17B0Da52653435a469</anypoint.platform.client_secret>
+								${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 
 						</properties>
 					</cloudHubDeployment>
